@@ -1,0 +1,52 @@
+.Git {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 270px;
+    height: 270px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.47);
+    border-radius: 29px;
+    background-color: var(--color-background-card);
+    position: relative;
+
+
+}
+
+.Git:last-child {
+    margin-bottom: 150px;
+}
+
+.Giticon {
+    width: 75px;
+    height: 75px;
+    max-height: 60px;
+    margin: 60px 97px 5px auto;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.GitDesc {
+    text-align: center;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.GitTitle {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 29px;
+    font-style: normal;
+
+    display: block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.GitLink {
+
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}

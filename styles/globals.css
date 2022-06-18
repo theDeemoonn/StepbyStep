@@ -1,16 +1,149 @@
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    padding: 0;
+    margin: 0;
+    font-family: 'Red Hat Display', sans-serif;
+    background: var(--color-background);
+
+
+    color: var(--color-black-lite);
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.card_container {
+    display: grid;
+    grid-template-columns: 270px 270px 270px 270px;
+    grid-gap: 20px;
+    margin-bottom: 150px;
+    margin-top: 50px;
+
+}
+
+
+.about-card {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-gap: 20px;
+    justify-content: center;
+
+}
+
+.about-span {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.47);
+    width: 496px;
+    height: 822px;
+    background-color: var(--color-background-card);
+    border-radius: 14px;
+    z-index: 2;
+}
+
+.about-card-left {
+    display: grid;
+
+    grid-gap: 20px;
+    justify-content: center;
+
+}
+
+
+.about-card-right {
+    display: grid;
+
+    grid-gap: 20px;
+    justify-content: center;
+
+}
+
+.ellipse-about-1 {
+    margin-top: 20px;
+    margin-right: -400px;
+
+
+    width: 792px;
+    height: 792px;
+    border-radius: 100%;
+    border: 89px solid #bd0048;
+    filter: drop-shadow(0px 4px 70px rgba(255, 255, 255, 0.25));
+    box-shadow: 0px 4px 6px rgba(65, 64, 64, 0.47);
+
+}
+
+.ellipse-about-2 {
+    margin-left: -150px;
+    margin-top: -50px;
+    margin-bottom: 100px;
+    width: 356px;
+    height: 356px;
+    border: 34px solid #E2A200;
+    border-radius: 100%;
+    filter: drop-shadow(0px 4px 70px rgba(226, 162, 0, 0.25));
+    box-shadow: 0px 4px 6px rgba(65, 64, 64, 0.47);
+
+}
+
+.ellipse-about-3 {
+    margin-left: -180px;
+
+    width: 486px;
+    height: 486px;
+    border: 55px solid #00C4F0;
+    border-radius: 100%;
+    filter: drop-shadow(0px 4px 70px rgba(0, 193, 236, 0.25));
+    box-shadow: 0px 4px 6px rgba(65, 63, 63, 0.47);
+
+}
+
+
+@media (max-width: 765px) {
+    .card_container {
+        grid-template-columns: 270px 270px;
+        grid-gap: 20px;
+    }
+
+    .ellipse-about-1 {
+        display: none;
+
+    }
+
+    .ellipse-about-2 {
+        margin-left: -300px;
+        display: none;
+
+    }
+
+    .ellipse-about-3 {
+        margin-left: -480px;
+        display: none;
+
+    }
+
+    .about-card {
+        grid-template-columns: none;
+
+
+    }
+
+}
+
+
+:root {
+    --color-background: #E5E5E5;
+    --color-background-card: #F4FFED;
+    --color-black: #000000;
+    --color-white: #ffffff;
+    --color-gray: #666666;
+    --color-black-lite: #25202F;
+    --color-gray-lite: #47444E;
+    --color-purple: #8643DC;
+    --font-family: 'Red Hat Display', sans-serif;
+
 }

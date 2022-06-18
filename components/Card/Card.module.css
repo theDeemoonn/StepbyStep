@@ -1,0 +1,52 @@
+.Card {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 270px;
+    height: 270px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.47);
+    border-radius: 29px;
+    background-color: var(--color-background-card);
+    position: relative;
+
+}
+
+
+.CardLogoUp {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.CardLogoDown {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.Icon {
+    width: 75px;
+    height: 75px;
+    max-height: 60px;
+    margin: 60px 97px 5px auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.Content {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    font-style: normal;
+
+    display: block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.body {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-height: 1200px;
+    gap: 20px;
+
+}

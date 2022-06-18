@@ -1,0 +1,49 @@
+.Header {
+    display: grid;
+    margin-top: 0;
+    grid-template-columns: auto  1fr;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0.5rem 1rem;
+    background-color: var(--color-purple);
+    color: var(--color-white);
+    border-bottom: 1px solid #e6e6e6;
+    border-radius: 0 0 6px 6px;
+
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    grid-template-areas:
+        "HeaderLogo List";
+
+
+}
+
+.List {
+    display: flex;
+    /*flex-direction: row;*/
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    padding: 0.5rem 1rem;
+    background-color: var(--color-purple);
+    color: var(--color-white);
+    grid-area: List;
+
+}
+
+.HeaderLogo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    justify-self: center;
+    grid-area: HeaderLogo;
+}
+
+
+
+
+

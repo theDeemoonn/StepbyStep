@@ -1,0 +1,44 @@
+.p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+
+}
+
+.large {
+
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.01em;
+}
+
+.medium {
+
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+}
+
+.about {
+    max-width: 370px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    display: grid;
+    align-items: center;
+    letter-spacing: 0.01em;
+    margin: 63px;
+
+
+}
