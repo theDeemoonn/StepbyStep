@@ -1,4 +1,4 @@
-import React, {DetailedHTMLProps, HTMLAttributes} from 'react';
+import React, {DetailedHTMLProps, HTMLAttributes, useState} from 'react';
 import {Htag, P} from "../../components";
 import Button from "../../components/Button/Button";
 import styles from './Body.module.css';
@@ -8,6 +8,8 @@ import ReactIcon from '/public/cardlogo/icons8-react-native-48.svg'
 import ReduxIcon from '/public/cardlogo/icons8-redux-50.svg'
 import TSIcon from '/public/cardlogo/icons8-typescript-50.svg';
 import JSIcon from '/public/cardlogo/icons8-javascript-50.svg';
+import {Modal} from "../../components/Modal/Modal";
+import {Portal} from "next/dist/client/portal";
 
 export interface BodyProps extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
 
@@ -15,6 +17,9 @@ export interface BodyProps extends DetailedHTMLProps<HTMLAttributes<HTMLDivEleme
 }
 
 export default function Body({...props}: BodyProps): JSX.Element {
+    const [mounted, setMounted] = useState(false)
+
+
     return (
         <div className={styles.Body} {...props}>
 
@@ -26,9 +31,16 @@ export default function Body({...props}: BodyProps): JSX.Element {
                     <P>Занимаюсь frontend разработкой. Вам нужен сайта, верстка сайта, а может сайт под ключ? Тогда
                         свяжитесь со
                         мной</P>
-                    <Button>Контакты</Button>
+                    <Button onClick={() => {
+                        setMounted(true)
+
+                    }}>Контакты</Button>
                 </div>
             </div>
+            {mounted && (<Portal type={'modal'}><Modal onClose={() => {
+                setMounted(false);
+            }}/></Portal>)}
+
             <div className={styles.ContainerRight}>
 
 

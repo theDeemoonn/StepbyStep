@@ -1,0 +1,23 @@
+.Modal {
+    position: fixed;
+
+    left: 25%;
+    top: 30%;
+
+    width: 50%;
+    z-index: 2;
+
+
+    border-radius: 14px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.47);
+
+    background-color: var(--color-background-card);
+    backdrop-filter: blur(150px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    /*color: #ffffff;*/
+}

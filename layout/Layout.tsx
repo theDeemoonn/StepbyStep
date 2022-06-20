@@ -1,4 +1,4 @@
-import React, {FunctionComponent} from 'react';
+import React, {Component, FunctionComponent} from 'react';
 import {LayoutProps} from "./Layout.props";
 import Header from "./Header/Header";
 import Footer from "./Footer/Footer";
@@ -25,7 +25,8 @@ export function Layout({children, ...props}: LayoutProps): JSX.Element {
 };
 
 
-export const LayoutContainer = <T extends Record<any>>(Component: FunctionComponent<T>) => {
+// @ts-ignore
+export const LayoutContainer = <T extends Record<string, unknown>>(Component: FunctionComponent<T>) => {
     return function LayoutContainerComponent(props: T): JSX.Element {
         return (
             <Layout>

@@ -1,4 +1,4 @@
-import {GitCard, Htag, P} from "../components";
+import {GitCard, Htag} from "../components";
 import Card from "../components/Card/Card";
 import {LayoutContainer} from "../layout/Layout";
 import React from "react";
@@ -7,6 +7,7 @@ import axios from "axios";
 import {RootObject} from "../interfaces/menu.interface";
 import {GetStaticProps} from "next";
 import Body from "../layout/body/body";
+import About from "../layout/body/about/about";
 
 
 function Home({git}: HomeProps): JSX.Element {
@@ -53,39 +54,16 @@ function Home({git}: HomeProps): JSX.Element {
                 </Card>
             </div>
 
-            <Htag tag={'h2'}>Обо мне</Htag>
-            <div className="about-card">
-                <span className="about-card-left">
-                <span className="ellipse-about-1"></span>
-                </span>
-                <span className="about-span">
-                <P size='about'> Привет всем. Я Дмитрий, начинающий frontend-developer. Почему программирование?
-                    Все
-                    элементарно - мне это
-                    нравится, профессия будущего, благодаря которой я могу обеспечить себя и осуществить свою мечту -
-                    путешествовать. Почему вы должны выбрать меня? Я подхожу к каждому заказу с большой ответственностью
-                    и
-                    любовью, так как хочу сделать себе имя, исключить халатность, полностью изучить проект,
-                    клиента и его целевую аудиторию, работать на качество, стараясь сделать заказ максимально быстро и
-                    уникально, учитывая все правки и желания. Доверившись мне, вы получите максимальную отдачу от своего
-                    проекта, сэкономите свои нервы и время.
-                    Если вы заинтересованы во мне, хотите узнать что-то еще или воспользоваться моими услугами, то я
-                    предоставлю все свои контакты. </P></span>
-                <span className="about-card-right">
-                    <span className="ellipse-about-2"></span>
-                <span className="ellipse-about-3"></span>
-                </span>
+            <Htag id={'about'} tag={'h2'}>Обо мне</Htag>
+            <About/>
 
 
-            </div>
-
-
-            <Htag tag={'h2'}>Мой профиль на GitHub</Htag>
+            <Htag id={'git'} tag={'h2'}>Мой профиль на GitHub</Htag>
 
             {/*<GitCard git={git}/>*/}
 
 
-            <div className="card_container">
+            <div className="git_card_container">
                 {git.map(git => <GitCard git={git}/>)}
 
             </div>

@@ -9,9 +9,11 @@ export interface ButtonProps extends DetailedHTMLProps<ButtonHTMLAttributes<HTML
 }
 
 export default function Button({children, className, ...props}: ButtonProps) {
+
     return (
         <button className={cn(styles.Button, className)}{...props}>
             {children}
         </button>
+
     );
 }

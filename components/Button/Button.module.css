@@ -1,6 +1,6 @@
 .Button {
     display: inline-block;
-    box-shadow: 0px 2px 13px rgba(226, 158, 0, 0.48);
+    box-shadow: 0 2px 13px rgba(226, 158, 0, 0.48);
     background: var(--color-purple);
     border-radius: 6px;
     cursor: pointer;

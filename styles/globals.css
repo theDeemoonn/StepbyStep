@@ -2,11 +2,8 @@ html,
 body {
     padding: 0;
     margin: 0;
-    font-family: 'Red Hat Display', sans-serif;
+    font-family: var(--font-family);
     background: var(--color-background);
-    /*filter: blur(150px);*/
-
-    /*backdrop-filter: blur(150px);*/
 
 
     color: var(--color-black-lite);
@@ -28,87 +25,37 @@ a {
     margin-bottom: 150px;
     margin-top: 50px;
 
-
 }
 
-
-.about-card {
-    margin-top: 20px;
+.git_card_container {
     display: grid;
-    grid-template-columns: auto 1fr auto;
+    grid-template-columns: 270px 270px 270px 270px;
     grid-gap: 20px;
-    justify-content: center;
-
+    margin-bottom: 0;
+    margin-top: 50px;
+    background: linear-gradient(180deg, rgba(187, 133, 255, 0.14) 0%, rgba(255, 177, 222, 0.14) 100%);
+    backdrop-filter: blur(150px);
 }
 
-.about-span {
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.47);
-    width: 496px;
-    height: 822px;
-    background-color: var(--color-background-card);
-    border-radius: 14px;
-    z-index: 2;
+@media (max-width: 900px) {
+    .card_container {
+        grid-template-columns: 270px 270px 270px;
+        grid-gap: 20px;
+    }
+
+    .git_card_container {
+        grid-template-columns: 270px 270px 270px;
+        grid-gap: 20px;
+    }
 }
-
-.about-card-left {
-    display: grid;
-
-    grid-gap: 20px;
-    justify-content: center;
-
-}
-
-
-.about-card-right {
-    display: grid;
-
-    grid-gap: 20px;
-    justify-content: center;
-
-}
-
-.ellipse-about-1 {
-    margin-top: 20px;
-    margin-right: -400px;
-
-
-    width: 792px;
-    height: 792px;
-    border-radius: 100%;
-    border: 89px solid #bd0048;
-    filter: drop-shadow(0px 4px 70px rgba(255, 255, 255, 0.25));
-    box-shadow: 0px 4px 6px rgba(65, 64, 64, 0.47);
-
-}
-
-.ellipse-about-2 {
-    margin-left: -150px;
-    margin-top: -50px;
-    margin-bottom: 100px;
-    width: 356px;
-    height: 356px;
-    border: 34px solid #E2A200;
-    border-radius: 100%;
-    filter: drop-shadow(0px 4px 70px rgba(226, 162, 0, 0.25));
-    box-shadow: 0px 4px 6px rgba(65, 64, 64, 0.47);
-
-}
-
-.ellipse-about-3 {
-    margin-left: -180px;
-
-    width: 486px;
-    height: 486px;
-    border: 55px solid #00C4F0;
-    border-radius: 100%;
-    filter: drop-shadow(0px 4px 70px rgba(0, 193, 236, 0.25));
-    box-shadow: 0px 4px 6px rgba(65, 63, 63, 0.47);
-
-}
-
 
 @media (max-width: 765px) {
     .card_container {
+        grid-template-columns: 270px 270px;
+        grid-gap: 20px;
+    }
+
+    .git_card_container {
         grid-template-columns: 270px 270px;
         grid-gap: 20px;
     }
@@ -148,6 +95,6 @@ a {
     --color-black-lite: #25202F;
     --color-gray-lite: #47444E;
     --color-purple: #8643DC;
-    --font-family: 'Red Hat Display', sans-serif;
+    --font-family: Nunito, sans-serif;
 
 }

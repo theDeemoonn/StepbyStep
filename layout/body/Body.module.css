@@ -1,15 +1,15 @@
 .Body {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /*background: linear-gradient(180deg, rgba(187, 133, 255, 0.14) 0%, rgba(255, 177, 222, 0.14) 100%);*/
-    /*backdrop-filter: blur(150px);*/
-    margin-bottom: 150px;
+    background: linear-gradient(180deg, rgba(187, 133, 255, 0.14) 0%, rgba(255, 177, 222, 0.14) 100%);
+    /*filter: blur(150px);*/
+    margin-bottom: auto;
 
 
 }
 
 .ContainerLeftStyle {
-    margin-left: 10px;
+    margin-left: 25px;
 }
 
 
@@ -134,5 +134,17 @@
 .IconJS {
     width: 45px;
     height: 45px;
+
+}
+
+@media (max-width: 765px) {
+    .Body {
+        grid-template-columns: 1fr;
+    }
+
+    .ContainerRight {
+
+        display: none;
+    }
 
 }

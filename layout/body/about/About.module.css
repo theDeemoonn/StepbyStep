@@ -1,0 +1,98 @@
+.aboutCard {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-gap: 20px;
+    justify-content: center;
+
+}
+
+.aboutSpan {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.47);
+    width: 496px;
+    height: 822px;
+    background-color: var(--color-background-card);
+    border-radius: 14px;
+    z-index: 2;
+}
+
+.aboutCardLeft {
+    display: grid;
+
+    grid-gap: 20px;
+    justify-content: center;
+
+}
+
+
+.aboutCardRight {
+    display: grid;
+
+    grid-gap: 20px;
+    justify-content: center;
+
+}
+
+.ellipseAbout1 {
+    margin-top: 20px;
+    margin-right: -400px;
+
+
+    width: 792px;
+    height: 792px;
+    border-radius: 100%;
+    border: 89px solid #bd0048;
+    filter: drop-shadow(0px 4px 70px rgba(255, 255, 255, 0.25));
+    box-shadow: 0 4px 6px rgba(65, 64, 64, 0.47);
+
+}
+
+.ellipseAbout2 {
+    margin-left: -150px;
+    margin-top: -50px;
+    margin-bottom: 100px;
+    width: 356px;
+    height: 356px;
+    border: 34px solid #E2A200;
+    border-radius: 100%;
+    filter: drop-shadow(0px 4px 70px rgba(226, 162, 0, 0.25));
+    box-shadow: 0 4px 6px rgba(65, 64, 64, 0.47);
+
+}
+
+.ellipseAbout3 {
+    margin-left: -180px;
+
+    width: 486px;
+    height: 486px;
+    border: 55px solid #00C4F0;
+    border-radius: 100%;
+    filter: drop-shadow(0px 4px 70px rgba(0, 193, 236, 0.25));
+    box-shadow: 0 4px 6px rgba(65, 63, 63, 0.47);
+
+}
+
+@media (max-width: 765px) {
+    .ellipseAbout1 {
+        display: none;
+
+    }
+
+    .ellipseAbout2 {
+        margin-left: -300px;
+        display: none;
+
+    }
+
+    .ellipseAbout3 {
+        margin-left: -480px;
+        display: none;
+
+    }
+
+    .aboutCard {
+        grid-template-columns: none;
+
+
+    }
+}
