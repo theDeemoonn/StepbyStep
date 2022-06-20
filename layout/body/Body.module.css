@@ -143,8 +143,33 @@
     }
 
     .ContainerRight {
+        backdrop-filter: none;
+        position: fixed;
+        margin-left: 300px;
+        max-width: 50%;
+        max-height: 50%;
+    }
 
+
+    .ellipseBody1 {
         display: none;
     }
+
+    .IconReactBackground {
+        display: none;
+    }
+
+    .IconReduxBackground {
+        display: none;
+    }
+
+    .IconTSBackground {
+        display: none;
+    }
+
+    .IconJSBackground {
+        display: none;
+    }
+
 
 }

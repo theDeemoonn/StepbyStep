@@ -2,7 +2,7 @@ import {RootObject} from "../../interfaces/menu.interface";
 import React from "react";
 import styles from '/components/Gitcard/Gitcard.module.css';
 import axios from "axios";
-import GitHubIcon from '/public/cardlogo/icons8-github-75.svg';
+import GitHubIcon from '/public/cardlogo/icons8-github-100.svg';
 
 import {GetStaticProps} from "next";
 
