@@ -1,22 +1,30 @@
 .Body {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background: linear-gradient(180deg, rgba(187, 133, 255, 0.14) 0%, rgba(255, 177, 222, 0.14) 100%);
-    backdrop-filter: blur(150px);
+    /*background: linear-gradient(180deg, rgba(187, 133, 255, 0.14) 0%, rgba(255, 177, 222, 0.14) 100%);*/
+    /*backdrop-filter: blur(150px);*/
+    margin-bottom: 150px;
 
 
 }
 
+.ContainerLeftStyle {
+    margin-left: 10px;
+}
+
 
 .ContainerLeft {
-
+    display: grid;
+    align-content: center;
     backdrop-filter: blur(150px);
+
 }
 
 
 .ContainerRight {
     display: grid;
     backdrop-filter: blur(150px);
+
 
 }
 
@@ -46,6 +54,7 @@
     width: 45px;
     height: 45px;
     display: flex;
+    margin-left: 100px;
 
     border-radius: 50%;
     border: 40px solid #03fd07;
@@ -62,6 +71,20 @@
 
 }
 
+.IconReduxBackground {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    position: absolute;
+    margin: 10px 0 0 150px;
+
+    border-radius: 50%;
+    border: 40px solid #fa7a7a;
+    filter: drop-shadow(0px 4px 70px rgba(255, 255, 255, 0.25));
+    justify-content: center;
+    align-items: center;
+
+}
 
 .IconRedux {
     width: 45px;
@@ -70,10 +93,41 @@
 
 }
 
+.IconTSBackground {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    position: absolute;
+    margin: 40px 0 0 430px;
+
+    border-radius: 50%;
+    border: 40px solid #00bcd4;
+    filter: drop-shadow(0px 4px 70px rgba(255, 255, 255, 0.25));
+    justify-content: center;
+    align-items: center;
+
+}
+
 .IconTS {
     width: 45px;
     height: 45px;
 
+
+}
+
+.IconJSBackground {
+
+    width: 45px;
+    height: 45px;
+    display: flex;
+    position: absolute;
+    margin: 450px 0 0 400px;
+
+    border-radius: 50%;
+    border: 40px solid #f9a825;
+    filter: drop-shadow(0px 4px 70px rgba(255, 255, 255, 0.25));
+    justify-content: center;
+    align-items: center;
 
 }
 

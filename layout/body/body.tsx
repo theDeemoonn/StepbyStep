@@ -20,23 +20,33 @@ export default function Body({...props}: BodyProps): JSX.Element {
 
 
             <div className={styles.ContainerLeft}>
+                <div className={styles.ContainerLeftStyle}>
 
-                <Htag tag={'h1'}>Привет! Я Дмитрий</Htag>
-                <P>Занимаюсь frontend разработкой. Вам нужен сайта, верстка сайта, а может сайт под ключ? Тогда
-                    свяжитесь со
-                    мной</P>
-                <Button>Контакты</Button>
+                    <Htag tag={'h1'}>Привет! Я Дмитрий</Htag>
+                    <P>Занимаюсь frontend разработкой. Вам нужен сайта, верстка сайта, а может сайт под ключ? Тогда
+                        свяжитесь со
+                        мной</P>
+                    <Button>Контакты</Button>
+                </div>
             </div>
             <div className={styles.ContainerRight}>
+
+
                 <span className={styles.ellipseBody1}></span>
                 <Image className={styles.MeLogo} src={profilePic}/>
                 <span className={styles.IconReactBackground}>
 
                 <span className={styles.IconReact}><ReactIcon/></span>
                 </span>
+                <span className={styles.IconReduxBackground}>
                 <span className={styles.IconRedux}><ReduxIcon/></span>
+                </span>
+                <span className={styles.IconTSBackground}>
                 <span className={styles.IconTS}><TSIcon/></span>
+                </span>
+                <span className={styles.IconJSBackground}>
                 <span className={styles.IconJS}><JSIcon/></span>
+                </span>
             </div>
 
 

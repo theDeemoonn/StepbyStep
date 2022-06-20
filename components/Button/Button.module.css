@@ -12,6 +12,7 @@
     line-height: 20px;
     transition: background-color 0.5s ease-in-out;
     padding: 14px 41px;
+    max-width: 200px;
 }
 
 .Button:hover {

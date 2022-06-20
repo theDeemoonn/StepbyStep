@@ -4,6 +4,9 @@ body {
     margin: 0;
     font-family: 'Red Hat Display', sans-serif;
     background: var(--color-background);
+    /*filter: blur(150px);*/
+
+    /*backdrop-filter: blur(150px);*/
 
 
     color: var(--color-black-lite);
@@ -24,6 +27,7 @@ a {
     grid-gap: 20px;
     margin-bottom: 150px;
     margin-top: 50px;
+
 
 }
 
@@ -136,7 +140,7 @@ a {
 
 
 :root {
-    --color-background: #E5E5E5;
+    --color-background: linear-gradient(180deg, rgba(187, 133, 255, 0.14) 0%, rgba(255, 177, 222, 0.14) 100%);
     --color-background-card: #F4FFED;
     --color-black: #000000;
     --color-white: #ffffff;
