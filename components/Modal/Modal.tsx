@@ -1,11 +1,21 @@
 import React, {useEffect, useRef} from "react";
 import styles from '/components/Modal/Modal.module.css'
 import ReactDOM from "react-dom";
-import FacebookIcon from '/public/modallogo/facebook-f-brands.svg'
-import InstagramIcon from '/public/modallogo/instagram-brands.svg'
-import TwitterIcon from '/public/modallogo/twitter-brands.svg'
-import GitHubIcon from '/public/modallogo/github-brands.svg'
-import LinkedinIcon from '/public/modallogo/linkedin-in-brands.svg'
+import {config} from '@fortawesome/fontawesome-svg-core'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {
+    faFacebookF,
+    faGithub,
+    faInstagram,
+    faLinkedinIn,
+    faTelegram,
+    faTwitter
+} from '@fortawesome/free-brands-svg-icons'
+
+import {faEnvelopeOpenText} from "@fortawesome/free-solid-svg-icons";
+
+
+config.autoAddCss = false
 
 
 interface IModal {
@@ -42,26 +52,22 @@ export function Modal(props: IModal) {
     return ReactDOM.createPortal((
 
         <div className={styles.Modal} ref={ref}>
-            <div className={styles.BTN}>
-                <a href='#'><span className={styles.Facebook}><FacebookIcon/></span></a>
-                <p>Facebook</p>
-            </div>
-            <div className={styles.BTN}>
-                <a href='#'><span><InstagramIcon/></span></a>
-                <p>Instagram</p>
-            </div>
-            <div className={styles.BTN}>
-                <a href='#'><span><TwitterIcon/></span></a>
-                <p>Twitter</p>
-            </div>
-            <div className={styles.BTN}>
-                <a href='#'><span><GitHubIcon/></span></a>
-                <p>GitHub</p>
-            </div>
-            <div className={styles.BTN}>
-                <a href='#'><span><LinkedinIcon/></span></a>
-                <p>Linkedin</p>
-            </div>
+            <a className={styles.A} href='https://www.facebook.com/'><FontAwesomeIcon className={styles.BTN}
+                                                                                      icon={faFacebookF}/></a>
+
+            <a className={styles.A} href='https://www.facebook.com/'> <FontAwesomeIcon className={styles.BTN}
+                                                                                       icon={faTwitter}/></a>
+
+            <a className={styles.A} href='https://www.facebook.com/'><FontAwesomeIcon className={styles.BTN}
+                                                                                      icon={faLinkedinIn}/></a>
+            <a className={styles.A} href='https://www.facebook.com/'><FontAwesomeIcon className={styles.BTN}
+                                                                                      icon={faInstagram}/></a>
+            <a className={styles.A} href='https://github.com/theDeemoonn'><FontAwesomeIcon className={styles.BTN}
+                                                                                           icon={faGithub}/></a>
+            <a className={styles.A} href='https://github.com/theDeemoonn'><FontAwesomeIcon className={styles.BTN}
+                                                                                           icon={faTelegram}/></a>
+            <a className={styles.A} href='https://github.com/theDeemoonn'><FontAwesomeIcon className={styles.BTN}
+                                                                                           icon={faEnvelopeOpenText}/></a>
 
 
         </div>
