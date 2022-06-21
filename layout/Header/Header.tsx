@@ -20,7 +20,7 @@ export default function Header({...props}: HeaderProps): JSX.Element {
                 <div className={styles.List}>
                     <nav>
 
-                        <Link href="#">Главная</Link>{" "}
+                        <Link href="/">Главная</Link>{" "}
                         |{" "}
 
 

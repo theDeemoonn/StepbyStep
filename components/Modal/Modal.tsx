@@ -1,7 +1,12 @@
 import React, {useEffect, useRef} from "react";
 import styles from '/components/Modal/Modal.module.css'
-import {Htag} from "../Htag/Htag";
 import ReactDOM from "react-dom";
+import FacebookIcon from '/public/modallogo/facebook-f-brands.svg'
+import InstagramIcon from '/public/modallogo/instagram-brands.svg'
+import TwitterIcon from '/public/modallogo/twitter-brands.svg'
+import GitHubIcon from '/public/modallogo/github-brands.svg'
+import LinkedinIcon from '/public/modallogo/linkedin-in-brands.svg'
+
 
 interface IModal {
     onClose?: () => void;
@@ -17,7 +22,7 @@ export function Modal(props: IModal) {
         function handleClickOutside(event: MouseEvent) {
             if (event.target instanceof Node && !ref.current?.contains(event.target)) {
                 props.onClose?.();
-                console.log('close')
+
             }
         }
 
@@ -37,10 +42,26 @@ export function Modal(props: IModal) {
     return ReactDOM.createPortal((
 
         <div className={styles.Modal} ref={ref}>
-
-            <Htag tag={'h2'}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, illo provident. Ab autem
-                cupiditate illo incidunt minus natus quam sequi? Aliquid aspernatur assumenda aut facilis iste minus
-                obcaecati. Ratione, vel.</Htag>
+            <div className={styles.BTN}>
+                <a href='#'><span className={styles.Facebook}><FacebookIcon/></span></a>
+                <p>Facebook</p>
+            </div>
+            <div className={styles.BTN}>
+                <a href='#'><span><InstagramIcon/></span></a>
+                <p>Instagram</p>
+            </div>
+            <div className={styles.BTN}>
+                <a href='#'><span><TwitterIcon/></span></a>
+                <p>Twitter</p>
+            </div>
+            <div className={styles.BTN}>
+                <a href='#'><span><GitHubIcon/></span></a>
+                <p>GitHub</p>
+            </div>
+            <div className={styles.BTN}>
+                <a href='#'><span><LinkedinIcon/></span></a>
+                <p>Linkedin</p>
+            </div>
 
 
         </div>
