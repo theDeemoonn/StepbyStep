@@ -52,22 +52,24 @@ export function Modal(props: IModal) {
     return ReactDOM.createPortal((
 
         <div className={styles.Modal} ref={ref}>
-            <a className={styles.A} href='https://www.facebook.com/'><FontAwesomeIcon className={styles.BTN}
-                                                                                      icon={faFacebookF}/></a>
+            <a className={styles.A} href='https://www.facebook.com/TheDeemoonn/'><FontAwesomeIcon className={styles.BTN}
+                                                                                                  icon={faFacebookF}/></a>
 
-            <a className={styles.A} href='https://www.facebook.com/'> <FontAwesomeIcon className={styles.BTN}
-                                                                                       icon={faTwitter}/></a>
+            <a className={styles.A} href='https://twitter.com/nembuta_to_me'> <FontAwesomeIcon className={styles.BTN}
+                                                                                               icon={faTwitter}/></a>
 
-            <a className={styles.A} href='https://www.facebook.com/'><FontAwesomeIcon className={styles.BTN}
-                                                                                      icon={faLinkedinIn}/></a>
-            <a className={styles.A} href='https://www.facebook.com/'><FontAwesomeIcon className={styles.BTN}
-                                                                                      icon={faInstagram}/></a>
+            <a className={styles.A} href='https://www.linkedin.com/in/dmitry-zverev-5aa505234/'><FontAwesomeIcon
+                className={styles.BTN}
+                icon={faLinkedinIn}/></a>
+            <a className={styles.A} href='https://www.instagram.com/thedeemoonn/'><FontAwesomeIcon
+                className={styles.BTN}
+                icon={faInstagram}/></a>
             <a className={styles.A} href='https://github.com/theDeemoonn'><FontAwesomeIcon className={styles.BTN}
                                                                                            icon={faGithub}/></a>
-            <a className={styles.A} href='https://github.com/theDeemoonn'><FontAwesomeIcon className={styles.BTN}
-                                                                                           icon={faTelegram}/></a>
-            <a className={styles.A} href='https://github.com/theDeemoonn'><FontAwesomeIcon className={styles.BTN}
-                                                                                           icon={faEnvelopeOpenText}/></a>
+            <a className={styles.A} href='https://t.me/Deemoonn'><FontAwesomeIcon className={styles.BTN}
+                                                                                  icon={faTelegram}/></a>
+            <a className={styles.A} href='mailto:deemoonn@gmail.com'><FontAwesomeIcon className={styles.BTN}
+                                                                                      icon={faEnvelopeOpenText}/></a>
 
 
         </div>

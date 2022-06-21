@@ -64,6 +64,7 @@ function Home({git}: HomeProps): JSX.Element {
 
 
             <div className="git_card_container">
+                {/* eslint-disable-next-line react/jsx-key */}
                 {git.map(git => <GitCard git={git}/>)}
 
             </div>

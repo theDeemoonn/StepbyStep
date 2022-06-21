@@ -15,6 +15,7 @@ function Error404(): JSX.Element {
                 <div className={styles.Sky}>
                     <Htag tag={'h2'}><span>4</span><span>0</span><span>4</span></Htag>
                     <div className={styles.Grass}/>
+                    {/* eslint-disable-next-line jsx-a11y/alt-text */}
                     <Image src={planePic} className={styles.Plane}/>
 
 
