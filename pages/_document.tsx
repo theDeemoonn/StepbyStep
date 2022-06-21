@@ -22,12 +22,15 @@ class MyDocument extends Document {
                     <link rel="manifest" href="/favico/site.webmanifest"/>
                     <link rel="mask-icon" href="/favico/safari-pinned-tab.svg" color="#3eb3d5"/>
                     <link rel="preconnect" href="https://fonts.googleapis.com"/>
-                    {/*<link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>*/}
+
                     <link
                         href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;700&display=swap"
                         rel="stylesheet"/>
                     <meta name="msapplication-TileColor" content="#ffffff"/>
                     <meta name="theme-color" content="#ffffff"/>
+                    <meta property="og:title" content="Step by Step"/>
+                    <meta property="og:description" content="Шаг за шагом"/>
+                    <meta property="og:url" content="sbys.me"/>
 
 
                 </Head>

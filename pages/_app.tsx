@@ -10,6 +10,8 @@ function MyApp({Component, pageProps}: AppProps): JSX.Element {
     return <>
         <Head>
             <title>Step by Step</title>
+
+
         </Head>
 
 
