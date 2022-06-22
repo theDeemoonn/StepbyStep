@@ -85,7 +85,6 @@
     bottom: 0;
     width: 100%;
     height: 20px;;
-    background: url('/public/404logo/grass.png') bottom;
     animation: animateGrass 0.2s linear infinite;
 
 }

@@ -31,21 +31,26 @@ export default function Body({...props}: BodyProps): JSX.Element {
                     <P>Занимаюсь frontend разработкой. Вам нужен сайта, верстка сайта, а может сайт под ключ? Тогда
                         свяжитесь со
                         мной</P>
+
                     <Button onClick={() => {
                         setMounted(true)
 
                     }}>Контакты</Button>
+
                 </div>
+                {mounted && (<Portal type={'modal'}><Modal onClose={() => {
+                    setMounted(false);
+                }}/></Portal>)}
             </div>
-            {mounted && (<Portal type={'modal'}><Modal onClose={() => {
-                setMounted(false);
-            }}/></Portal>)}
 
             <div className={styles.ContainerRight}>
 
 
                 <span className={styles.ellipseBody1}></span>
-                <Image className={styles.MeLogo} src={profilePic}/>
+                <span className={styles.Logo}>
+                    {/* eslint-disable-next-line jsx-a11y/alt-text */}
+                    <Image className={styles.MeLogo} src={profilePic}/>
+                </span>
                 <span className={styles.IconReactBackground}>
 
                 <span className={styles.IconReact}><ReactIcon/></span>

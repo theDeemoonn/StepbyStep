@@ -28,6 +28,16 @@
 
 }
 
+.Logo {
+    min-width: auto;
+    min-height: auto;
+    max-width: 421px;
+    max-height: 421px;
+    margin-left: 70px;
+    margin-top: 20px;
+
+}
+
 .MeLogo {
     z-index: 1;
 
@@ -54,7 +64,7 @@
     width: 45px;
     height: 45px;
     display: flex;
-    margin-left: 100px;
+    margin-left: 120px;
 
     border-radius: 50%;
     border: 40px solid #03fd07;
@@ -121,7 +131,8 @@
     height: 45px;
     display: flex;
     position: absolute;
-    margin: 450px 0 0 400px;
+    margin: 420px 0 0 400px;
+    z-index: 2;
 
     border-radius: 50%;
     border: 40px solid #f9a825;
@@ -141,6 +152,7 @@
     .Body {
         grid-template-columns: 1fr;
     }
+
 
     .ContainerRight {
         backdrop-filter: none;
