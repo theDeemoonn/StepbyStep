@@ -5,3 +5,6 @@ RUN npm install
 ADD . .
 ENV NODE_ENV production
 RUN npm build
+RUN npm prume --production
+CMD ["npm", "start"]
+EXPOSE 8080
