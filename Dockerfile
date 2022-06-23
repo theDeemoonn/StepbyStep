@@ -1,10 +1,10 @@
-FROM node:18.4-alpine
+FROM node:16-alpine
 WORKDIR /opt/app
 ADD package.json package.json
-RUN npm install
+RUN yarn install
 ADD . .
 ENV NODE_ENV production
-RUN npm build
-RUN npm prume --production
-CMD ["npm", "start"]
+RUN yarn
+RUN yarn  --production
+CMD ["yarn", "start"]
 EXPOSE 8080
