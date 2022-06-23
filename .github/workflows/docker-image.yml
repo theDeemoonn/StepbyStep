@@ -15,7 +15,7 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: Build the Docker image
-        uses: elgohr/Publish-Docker_Github_Action@master
+        uses: elgohr/Publish-Docker-Github-Action@master
         with:
           registry: https://ghcr.io
           name: docker.png.github.com/thedeemoonn/stepbystep/stepbystep
