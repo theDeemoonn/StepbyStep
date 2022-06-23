@@ -17,7 +17,7 @@ jobs:
       - name: Build the Docker image
         uses: elgohr/Publish-Docker-Github-Action@master
         with:
-          registry: docker.pkg.github.com
+          registry: https://ghcr.io
           name: docker.png.github.com/thedeemoonn/stepbystep/stepbystep
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
