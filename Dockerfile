@@ -7,4 +7,4 @@ ENV NODE_ENV production
 RUN yarn
 RUN yarn  --production
 CMD ["yarn", "start"]
-EXPOSE 3000
+EXPOSE 80
