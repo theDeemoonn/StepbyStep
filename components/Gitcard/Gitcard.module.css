@@ -53,5 +53,32 @@
     justify-content: center;
 }
 
+@media (max-width: 700px) {
+    .Git {
+        width: 200px;
+        height: 200px;
+        margin-left: 30px;
+        margin-top: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Giticon {
+        width: 60px;
+        height: 60px;
+        max-height: 40px;
+        margin: 40px 80px 5px 3em;
+
+    }
+
+    .GitDesc {
+        display: none;
+    }
+
+    .GitTitle {
+        margin-top: 50px;
+    }
+}
+
 
 

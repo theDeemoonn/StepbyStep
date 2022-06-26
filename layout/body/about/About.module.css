@@ -72,7 +72,7 @@
 
 }
 
-@media (max-width: 765px) {
+@media (max-width: 700px) {
     .ellipseAbout1 {
         display: none;
 
@@ -93,6 +93,11 @@
     .aboutCard {
         grid-template-columns: none;
 
+
+    }
+
+    .aboutSpan {
+        width: 462px;
 
     }
 }

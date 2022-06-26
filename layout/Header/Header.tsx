@@ -17,19 +17,23 @@ export default function Header({...props}: HeaderProps): JSX.Element {
             <ul className={styles.Header}>
                 <span className={styles.HeaderLogo}><SBS/><p>Step by Step</p></span>
 
+
                 <div className={styles.List}>
-                    <nav>
+
+
+                    <nav className={styles.menu__box}>
+
 
                         <Link href="/">Главная</Link>{" "}
                         |{" "}
 
 
-                        <Link href="/#about">Обо мне</Link>{" "}
+                        <Link className={styles.menu__item} href="/#about">Обо мне</Link>{" "}
                         |{" "}
 
-                        <Link href="/#git">Мои работы</Link>{" "}
+                        <Link className={styles.menu__item} href="/#git">Мои работы</Link>{" "}
                         |{" "}
-                        <a className={styles.ATag} onClick={() => {
+                        <a className={styles.menu__item} onClick={() => {
                             setMounted(true)
 
                         }}>Контакты</a>
