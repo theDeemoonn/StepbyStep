@@ -1,10 +1,7 @@
-import React, {DetailedHTMLProps, HTMLAttributes, useState} from "react";
+import React, {DetailedHTMLProps, HTMLAttributes} from "react";
 
 import Menu from 'react-burger-menu/lib/menus/slide'
-import {Modal} from "../Modal/Modal";
-import {Portal} from "next/dist/client/portal";
 import Link from "next/link";
-import styles from '/components/Burger/burger.module.css'
 
 
 export interface BurgerProps extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
@@ -12,8 +9,7 @@ export interface BurgerProps extends DetailedHTMLProps<HTMLAttributes<HTMLDivEle
 }
 
 
-export default function Links({...props}: BurgerProps): JSX.Element {
-    const [mounted, setMounted] = useState(false)
+export default function Links({}: BurgerProps): JSX.Element {
 
 
     const HamburgerIcon = () => (<div>
@@ -35,16 +31,8 @@ export default function Links({...props}: BurgerProps): JSX.Element {
                 <Link href="/#about">Обо мне</Link>
 
                 <Link href="/#git">Мои работы</Link>
-                <a className={styles.menuitem} onClick={() => {
-                    setMounted(true)
 
-                }}>Контакты</a>
             </main>
-
-
-            {mounted && (<Portal type={'modal'}><Modal onClose={() => {
-                setMounted(false);
-            }}/></Portal>)}
 
 
         </Menu>
