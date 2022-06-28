@@ -4,7 +4,7 @@ body {
     margin: 0;
     font-family: var(--font-family);
     background: var(--color-background);
-    /*min-width: 650px;*/
+    min-width: 500px;
 
 
     color: var(--color-black-lite);
