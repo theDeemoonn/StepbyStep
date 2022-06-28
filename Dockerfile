@@ -3,8 +3,9 @@ WORKDIR /opt/app
 ADD package.json package.json
 
 ADD . .
-ENV NODE_ENV production
+RUN yarn run build
+
 RUN yarn
-RUN yarn  --production
+
 CMD ["yarn", "start"]
 EXPOSE 80
