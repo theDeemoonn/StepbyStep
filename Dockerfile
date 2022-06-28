@@ -1,11 +1,11 @@
 FROM node:18-alpine
 WORKDIR /opt/app
 ADD package.json package.json
-
+RUN npm install
 ADD . .
-RUN yarn run build
+RUN npm run build
 
-RUN yarn
 
-CMD ["yarn", "start"]
+
+CMD ["npm", "start"]
 EXPOSE 80
