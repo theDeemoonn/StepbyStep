@@ -2,7 +2,7 @@
     display: grid;
     margin-top: 0;
     margin-bottom: 0;
-    grid-template-columns: auto  1fr;
+    /*grid-template-columns: auto  1fr;*/
     justify-content: space-between;
     align-items: center;
     list-style: none;
@@ -49,4 +49,17 @@
     cursor: pointer;
 }
 
+.burger {
+    display: none;
+}
+
+@media (max-width: 900px) {
+    .burger {
+        display: block;
+    }
+
+    .List {
+        display: none;
+    }
+}
 

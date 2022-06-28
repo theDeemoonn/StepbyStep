@@ -3,6 +3,7 @@ import type {AppProps} from 'next/app'
 import Head from "next/head";
 import {config} from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
+import '../styles/burger.css'
 
 config.autoAddCss = false
 

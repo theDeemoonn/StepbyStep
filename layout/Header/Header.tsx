@@ -4,16 +4,26 @@ import SBS from '/public/favico/safari-pinned-tab.svg'
 import Link from "next/link";
 import {Portal} from "next/dist/client/portal";
 import {Modal} from "../../components/Modal/Modal";
+import Links from "../../components/Burger/Burger";
+
 
 export interface HeaderProps extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
+
 }
 
 export default function Header({...props}: HeaderProps): JSX.Element {
     const [mounted, setMounted] = useState(false)
+    const HamburgerIcon = () => (<div className='p-1/2'>
+        <svg className="w-8 h-8 text-gray-500" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+             viewBox="0 0 24 24" stroke="currentColor">
+            <path d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+    </div>)
+
 
     return (
 
-        <div {...props}>
+        <div  {...props} id="outer-container">
             <ul className={styles.Header}>
                 <span className={styles.HeaderLogo}><SBS/><p>Step by Step</p></span>
 
@@ -45,6 +55,8 @@ export default function Header({...props}: HeaderProps): JSX.Element {
                     }}/></Portal>)}
 
                 </div>
+                <div className={styles.burger}><Links/></div>
+
             </ul>
 
 
