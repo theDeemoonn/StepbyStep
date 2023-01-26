@@ -18,13 +18,14 @@ export const getStaticProps: GetStaticProps = async () => {
     const git = res.data;
 
     return {
-        revalidate: 10,
+
 
         props: {
             git,
 
 
         },
+        revalidate: 10,
         notFound: true
 
     }
