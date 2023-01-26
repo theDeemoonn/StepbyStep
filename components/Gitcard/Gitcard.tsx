@@ -1,5 +1,5 @@
 import {RootObject} from "../../interfaces/menu.interface";
-import React, {useEffect} from "react";
+import React from "react";
 import styles from '/components/Gitcard/Gitcard.module.css';
 import axios from "axios";
 import GitHubIcon from '/public/cardlogo/icons8-github-100.svg';
@@ -13,36 +13,38 @@ interface GitCardProps extends Record <string, unknown> {
 }
 
 
-// export const getStaticProps: GetStaticProps = async () => {
-//     const res = await axios.get<RootObject[]>(`https://api.github.com/users/theDeemoonn/repos`);
-//     const git = res.data;
-//
-//     return {
-//         props: {
-//             git,
-//
-//
-//         },
-//         notFound: true
-//     }
-// }
+export const getStaticProps: GetStaticProps = async () => {
+    const res = await axios.get<RootObject[]>(`https://api.github.com/users/theDeemoonn/repos`);
+    const git = res.data;
+
+    return {
+        fallback: true,
+        props: {
+            git,
+
+
+        },
+        notFound: true
+
+    }
+}
 export const GitCard = ({git}: GitCardProps): JSX.Element => {
 
-    useEffect(() => {
-        const getStaticProps: GetStaticProps = async () => {
-            const res = await axios.get<RootObject[]>(`https://api.github.com/users/theDeemoonn/repos`);
-            const git = res.data;
-
-            return {
-                props: {
-                    git,
-
-
-                },
-                notFound: true
-            }
-        }
-    }, [])
+    // useEffect(() => {
+    //     const getStaticProps: GetStaticProps = async () => {
+    //         const res = await axios.get<RootObject[]>(`https://api.github.com/users/theDeemoonn/repos`);
+    //         const git = res.data;
+    //
+    //         return {
+    //             props: {
+    //                 git,
+    //
+    //
+    //             },
+    //             notFound: true
+    //         }
+    //     }
+    // }, [])
 
 
     return (
