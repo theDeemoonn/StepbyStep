@@ -42,7 +42,7 @@ export const GitCard = ({git}: GitCardProps): JSX.Element => {
                 notFound: true
             }
         }
-    }, [git])
+    }, [])
 
 
     return (
