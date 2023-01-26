@@ -18,7 +18,7 @@ export const getStaticProps: GetStaticProps = async () => {
     const git = res.data;
 
     return {
-        fallback: true,
+        revalidate: 1,
         props: {
             git,
 
