@@ -78,7 +78,7 @@ function Home({git}: HomeProps): JSX.Element {
 export default LayoutContainer(Home);
 
 
-export const getStaticProps: GetStaticProps = async () => {
+export const getServerSideProps: GetStaticProps = async () => {
     const res = await axios.get<RootObject[]>(`https://api.github.com/users/theDeemoonn/repos`);
     const git = res.data;
     const ownerData = await axios.get<RootObject[]>(`https://api.github.com/users/theDeemoonn`);
