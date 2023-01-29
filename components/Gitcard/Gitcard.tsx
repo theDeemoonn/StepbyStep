@@ -13,7 +13,7 @@ interface GitCardProps extends Record <string, unknown> {
 }
 
 
-export const getStaticProps: GetStaticProps = async () => {
+export const getServerSideProps: GetStaticProps = async () => {
     const res = await axios.get<RootObject[]>(`https://api.github.com/users/theDeemoonn/repos`);
     const git = res.data;
 
@@ -27,32 +27,14 @@ export const getStaticProps: GetStaticProps = async () => {
         },
 
         notFound: true,
-        revalidate: 10,
-
     }
 }
 export const GitCard = ({git}: GitCardProps): JSX.Element => {
 
-    // useEffect(() => {
-    //     const getStaticProps: GetStaticProps = async () => {
-    //         const res = await axios.get<RootObject[]>(`https://api.github.com/users/theDeemoonn/repos`);
-    //         const git = res.data;
-    //
-    //         return {
-    //             props: {
-    //                 git,
-    //
-    //
-    //             },
-    //             notFound: true
-    //         }
-    //     }
-    // }, [])
-
 
     return (
         <div className={styles.Git}>
-            <div className={styles.Giticon} key={git.name}><GitHubIcon/></div>
+            <div className={styles.GitIcon} key={git.name}><GitHubIcon/></div>
             <div className={styles.GitTitle} key={git.name}>{git.name}</div>
             <p className={styles.GitDesc} key={git.description}>{git.description}</p>
             <a href={git.html_url} className={styles.GitLink} key={git.html_url}>Перейти на GitHub</a>
