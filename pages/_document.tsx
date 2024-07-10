@@ -11,10 +11,10 @@ class MyDocument extends Document {
     render(): JSX.Element {
 
         return (
-            <Html lang="ru">
+            <Html lang="en">
                 <Head>
 
-                    <meta name="description" content="Шаг за шагом"/>
+                    <meta name="description" content="Step by step"/>
                     <link rel="apple-touch-icon" sizes="180x180" href="/favico/apple-touch-icon.png"/>
                     <link rel="icon" type="image/png" sizes="32x32" href="/favico/favicon.ico"/>
                     <link rel="icon" type="image/png" sizes="32x32" href="/favico/favicon-32x32.png"/>

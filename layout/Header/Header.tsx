@@ -34,19 +34,19 @@ export default function Header({...props}: HeaderProps): JSX.Element {
                     <nav className={styles.menu__box}>
 
 
-                        <Link href="/">Главная</Link>{" "}
+                        <Link href="/">Home</Link>{" "}
                         |{" "}
 
 
-                        <Link className={styles.menu__item} href="/#about">Обо мне</Link>{" "}
+                        <Link className={styles.menu__item} href="/#about">About</Link>{" "}
                         |{" "}
 
-                        <Link className={styles.menu__item} href="/#git">Мои работы</Link>{" "}
+                        <Link className={styles.menu__item} href="/#git">My works</Link>{" "}
                         |{" "}
                         <a className={styles.menu__item} onClick={() => {
                             setMounted(true)
 
-                        }}>Контакты</a>
+                        }}>Contacts</a>
 
 
                     </nav>
@@ -55,7 +55,7 @@ export default function Header({...props}: HeaderProps): JSX.Element {
                     }}/></Portal>)}
 
                 </div>
-                <div className={styles.burger}><Links/></div>
+                {/*<div className={styles.burger}><Links/></div>*/}
 
             </ul>
 

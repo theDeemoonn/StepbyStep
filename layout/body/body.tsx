@@ -27,15 +27,13 @@ export default function Body({...props}: BodyProps): JSX.Element {
             <div className={styles.ContainerLeft}>
                 <div className={styles.ContainerLeftStyle}>
 
-                    <Htag tag={'h1'}>Привет! Я Дмитрий</Htag>
-                    <P>Занимаюсь frontend разработкой. Вам нужен сайта, верстка сайта, а может сайт под ключ? Тогда
-                        свяжитесь со
-                        мной</P>
+                    <Htag tag={'h1'}>Hi! I'm Dmitry</Htag>
+                    <P>I am engaged in frontend development. Do you need a website, website layout, or maybe a turnkey website? Then contact me</P>
 
                     <Button onClick={() => {
                         setMounted(true)
 
-                    }}>Контакты</Button>
+                    }}>Contacts</Button>
 
                 </div>
                 {mounted && (<Portal type={'modal'}><Modal onClose={() => {

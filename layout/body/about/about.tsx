@@ -12,18 +12,15 @@ import styles from './About.module.css';
             <span className={styles.ellipseAbout1}></span>
             </span>
             <span className={styles.aboutSpan}>
-            <P size='about'> Привет всем. Я Дмитрий, начинающий frontend разработчик. Почему программирование?
-                Все
-                элементарно - мне это
-                нравится, профессия будущего, благодаря которой я могу обеспечить себя и осуществить свою мечту.
-                Почему вы должны выбрать меня? Я подхожу к каждому заказу с большой ответственностью
-                и
-                любовью, так как хочу сделать себе имя, исключить халатность, полностью изучить проект,
-                клиента и его целевую аудиторию, работать на качество, стараясь сделать заказ максимально быстро и
-                уникально, учитывая все правки и желания. Доверившись мне, вы получите максимальную отдачу от своего
-                проекта, сэкономите свои нервы и время.
-                Если вы заинтересованы во мне, хотите узнать что-то еще или воспользоваться моими услугами, то я
-                предоставлю все свои контакты. </P></span>
+            <P size='about'> Hi all. I'm Dmitry, a beginner frontend developer. Why programming?
+ Everything is elementary - I like it, the profession of the future, thanks to which I can provide for myself and fulfill my dream.
+ Why should you choose me? I approach every order with great responsibility and
+ love, because I want to make a name for myself, eliminate negligence, fully study the project,
+ client and his target audience, work for quality, trying to place an order as quickly as possible and
+ unique, taking into account all the edits and desires. By trusting me, you will get the most out of your
+ project, save your nerves and time.
+ If you are interested in me, want to know something else or use my services, then I
+ I will provide all my contacts.</P></span>
             <span className={styles.aboutCardRight}>
                 <span className={styles.ellipseAbout2}></span>
             <span className={styles.ellipseAbout3}></span>

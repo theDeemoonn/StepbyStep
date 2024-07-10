@@ -54,11 +54,11 @@ function Home({git}: HomeProps): JSX.Element {
                 </Card>
             </div>
 
-            <Htag id={'about'} tag={'h2'}>Обо мне</Htag>
+            <Htag id={'about'} tag={'h2'}>About me</Htag>
             <About/>
 
 
-            <Htag id={'git'} tag={'h2'}>Мой профиль на GitHub</Htag>
+            <Htag id={'git'} tag={'h2'}>My GitHub profile</Htag>
 
             {/*<GitCard git={git}/>*/}
 
