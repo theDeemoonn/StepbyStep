@@ -37,7 +37,7 @@ export const GitCard = ({git}: GitCardProps): JSX.Element => {
             <div className={styles.GitIcon} key={git.name}><GitHubIcon/></div>
             <div className={styles.GitTitle} key={git.name}>{git.name}</div>
             <p className={styles.GitDesc} key={git.description}>{git.description}</p>
-            <a href={git.html_url} className={styles.GitLink} key={git.html_url}>Перейти на GitHub</a>
+            <a href={git.html_url} className={styles.GitLink} key={git.html_url}>Go to GitHub</a>
             {/*{git.map(git => <div className={styles.GitTitle} key={git.full_name}>{git.owner.avatar_url}</div>)}*/}
             {/*{git.map(m => <a href={m.html_url} className={styles.GitLink} key={m.html_url}>Перейти на GitHub</a>)}*/}
         </div>
